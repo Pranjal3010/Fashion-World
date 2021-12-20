@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<title>Fashion Blog</title>
+<link rel="shortcut icon" href="f.jpg" />
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Oswald"
+  }
+
+  body {
+    font-family: "Open Sans"
+  }
+</style>
+
+<body class="w3-light-grey">
+
+  <!-- Navigation bar with social media icons -->
+  <div class="w3-bar w3-border w3-black">
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white">About</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white">Contact</a>
+    <a href="#" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white"></a>
+  </div>
+
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        <img class="object-cover object-center rounded" alt="hero" src="about.jpg">
+      </div>
+      <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">About US</h1>
+        <p class="mb-8 leading-relaxed">
+            We are all about tradition's, Rituals & Beliefs of all the people around the world. Our work is to keep
+             you informed you all about the different Tradition's all around the World.
+              <br>
+            Traditional dress may be defined as the ensemble of garments, jewelry, and accessories rooted in the 
+            past that is worn by an identifiable group of people. Though slight changes over time in color, form, 
+            and material are acknowledged, the assemblage seems to be handed down unchanged from the past. 
+            <br>
+            Traditional dress or costume is a phrase used widely both by the general public and writers on dress. 
+            It conjures up images of rural people dressed in colorful, layered, exotic clothing from an idealized 
+            past in some faraway place. This notion of traditional dress has been scrutinized and found inadequate
+             by many researchers and scholars, but its uncritical use continues into the twenty-first century.
+             <br>
+             The phrase traditional dress or costume is often used interchangeably with the terms ethnic, regional, 
+             dress. For a concise discussion of this terminology see Welters and for a fascinating look at how the term 
+             is used try a Web search on the words "traditional costume."
+
+        </p>
+        <p class="mb-8 leading-relaxed">
+            In Webster's Third International Dictionary, tradition is defined as "an inherited or established 
+            way of thinking, feeling or doing: a cultural feature preserved or evolved from the past"
+             (1993, p. 2422; italics by author). 
+             <br>
+             The concept of traditional dress as a static form carried over from the past is usually contrasted
+              with the rapidly changing fashion of "the West." Ethnographers and travelers documenting actual dress
+               practices provided the original data for later interpretation by other researchers.
+                Early social psychologists were primarily concerned with understanding the human element of fashion 
+                , not with the continuity of a particular dress tradition, thus the reference to tradition or custom was
+                 usually brief.
+                 <br>
+                 General studies of folk or traditional costume were geared toward showing the diversity and splendor of
+                  peoples of the world while more recent, specific studies tend toward more historical and cultural 
+                  analysis. Tarrant asks the pertinent questions, "What tradition?" and "How old is tradition?"
+                   (p. 153), questions that are essential for studying and analyzing the cultural and historic
+                    aspects of dress.
+        </p>
+
+        <div class="flex w-full md:justify-start justify-center items-end">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-dark-grey" style="padding:32px">
+    <a href="#"
+      class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the
+      top</a>
+    <p>Powered by <a href="https://pranjal3010.github.io/pranjalnegi.com/" target="_blank">Pranjal Negi</a>
+     
+      <h2>All Copyrights © (2021-2022) Reserved To</h2>
+      <h3>Pranjal Negi </h3> 
+    </p>
+  </footer>
+
+  <script>
+    // Toggle between hiding and showing blog replies/comments
+    document.getElementById("myBtn").click();
+    function myFunction(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+    function likeFunction(x) {
+      x.style.fontWeight = "bold";
+      x.innerHTML = "✓ Liked";
+    }
+  </script>
+
+</body>
+
+</html>
